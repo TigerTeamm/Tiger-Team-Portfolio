@@ -84,7 +84,7 @@ section{
 {
     position: relative;
     min-height: 100vh;
-    background: url("https://lh5.googleusercontent.com/FvGO2c-DrBJF69GleRvdsZyFLJl0-3m8EeuUw6BKgYDfjgE-GERWb7Aa-z5_Z3xswoFzu_WDYyecU0CWSPbQ=w1960-h2484-rw");
+    background-image: url("imagens/Logo5k.png");
     background-color: black; /*Mudar essa imagem aqui*/
     background-size: cover;
     background-position: right;
