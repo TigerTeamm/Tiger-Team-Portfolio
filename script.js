@@ -12,7 +12,7 @@ function toggleMenu(){
 }
 
 //Text que somente escreve 
-var texto = "I'm Front End Developer Jr."
+var texto = "Developers freelancers team."
 var result
 
 var count = 0
