@@ -36,7 +36,19 @@ header .logo{ /*MUDAR AS CORES DA LOGO*/
     font-weight: 700;
     letter-spacing: 2px;
 }
-
+#containerImagem {
+    width: 300px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#containerImagem img {
+    width: 100%
+}
+img {
+    width: 100%
+}
 /*MUDAR A COR*/
 header.stick .logo{
     color: #111;
@@ -84,7 +96,7 @@ section{
 {
     position: relative;
     min-height: 100vh;
-    background-image: url("imagens/Logo5k.png");
+    background-image: url("imagens/bgFHD.png");
     background-color: black; /*Mudar essa imagem aqui*/
     background-size: cover;
     background-position: right;
@@ -154,6 +166,129 @@ section{
     }
 }
 
+.testimonials {
+    width: 100%;
+    height: 80vh;
+    /* background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%, url("imagens/testimonials-bg.jpg") center no-repeat fixed;  */
+    /*background: #FF416C; 
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  
+    background: linear-gradient(to right, #FF4B2B, #FF416C); */
+    background: url("imagens/Sun-city.jpg") center no-repeat fixed; 
+    background-size: cover; 
+    position: relative;
+    opacity: 90%;
+}
+
+.testimonials::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 4.7rem;
+    /*background: url("imagens/wave-large-reversed.png") center no-repeat;*/
+    background-size: cover;
+} 
+
+.testimonial {
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.testimonial-text-box {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem; 
+    position: relative; 
+}
+
+.testimonial-text-box i {
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #93291E;
+    opacity: .5;
+    z-index: -1;
+}
+
+.testimonial-customer img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: 0.5pc solid #93291E; 
+} 
+
+/* testimonial 2 */ 
+.testimonials2 {
+    width: 100%;
+    height: 80vh;
+    background: url("imagens/WallpaperParalax.jpg") center no-repeat fixed; 
+    background-size: cover; 
+    position: relative;
+    opacity: 90%;
+}
+
+.testimonials2::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 4.7rem;
+    /*background: url("imagens/wave-large-reversed.png") center no-repeat;*/
+    background-size: cover;
+} 
+
+.testimonial2 {
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.testimonial2-text-box {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem; 
+    position: relative; 
+}
+
+.testimonial2-text-box i {
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #93291E;
+    opacity: .5;
+    z-index: -1;
+}
+
+.testimonial2-customer img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: 0.5pc solid #93291E; 
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-bottom:2rem;  
+}
+
+.adventure-grid-item p {
+    color: rgba(0,0,0,0.7);
+}
 
 .contentBx .btn:hover{
     -webkit-transform: scale(1.2);
@@ -214,9 +349,9 @@ section{
 
 .tecnologias .content .tecnologiasBx{
     padding: 40px 20px;
-    background: #ffff; /*F0FFFF B0C4DE #B0C4DE*/
-    color: black; /*#fff*/
-    max-width: 20%; /*300 340*/
+    background: #ffff; 
+    color: black; 
+    max-width: 20%; 
     margin: 20px;
     text-align: center;
     transform: 0.5s;
@@ -226,9 +361,9 @@ section{
 }
 
 .tecnologias .content .tecnologiasBx:hover{
-    background: #fff; /*MUDAR A COR 87CEEB 00BFFF*/
+    background: #fff; 
     top:-2px;
-    box-shadow:0 4px 4px #00BFFF/*#666*/;
+    box-shadow:0 4px 4px #00BFFF;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -314,7 +449,7 @@ section{
 }
 
 .redes-sociais ul li a:hover{
-    color: #00BFFF;
+    color: #f12711;
     top:-2px;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
